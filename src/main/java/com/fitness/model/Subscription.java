@@ -10,7 +10,11 @@ public class Subscription {
     public Subscription() {
     }
 
-    public Subscription(String name, int durationMonths, double price) {
+    public Subscription(
+            String name,
+            int durationMonths,
+            double price) {
+
         this.name = name;
         this.durationMonths = durationMonths;
         this.price = price;
@@ -46,5 +50,10 @@ public class Subscription {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return name;
     }
 }

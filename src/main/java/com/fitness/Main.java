@@ -5,12 +5,14 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import com.fitness.database.DatabaseInitializer;
+import com.fitness.database.SubscriptionInitializer;
 
 public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
         DatabaseInitializer.initialize();
+        SubscriptionInitializer.initialize();
         FXMLLoader loader =
                 new FXMLLoader(getClass().getResource("/fxml/main-view.fxml"));
 

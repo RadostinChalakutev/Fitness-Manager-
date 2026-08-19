@@ -19,7 +19,8 @@
                     styleClass="sidebar-button"/>
 
             <Button text="Members"
-                    styleClass="sidebar-button"/>
+                    styleClass="sidebar-button"
+                    onAction="#openMembers"/>
 
         </VBox>
     </left>
